@@ -15,6 +15,7 @@ title = driver.title             #Gets the webpage title
 
 
 search = driver.find_element_by_name("s")        #finds an element in the source code by name s = search box
+search.clear()
 search.send_keys("test")                         #Types test in the search bar
 search.send_keys(Keys.RETURN)                    #Presses ENTER
 
